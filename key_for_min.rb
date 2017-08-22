@@ -2,15 +2,15 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  value_track = nil
-  key_track = nil
+  value_tracker = nil
+  key_tracker = nil
 
   name_hash.each do |key, value|
-    if value_track == nil || value < value_track
-      value_track = value
-      key_track = key
+    if value_tracker == nil || value < value_tracker
+      value_tracker = value
+      key_tracker = key
     end
   end
 
-  return key_track
+  return key_tracker
 end
